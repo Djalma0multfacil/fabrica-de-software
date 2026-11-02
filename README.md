@@ -1,25 +1,15 @@
-# Obsidian Notes & Mult Projects Vault
+# Fábrica de Software Starter Pack (Multi-LLM Guide)
 
-Este repositório armazena notas pessoais de estudo, arquitetura de software, diários e automações/skills utilizadas na esteira ágil dos projetos da Mult.
+## O que é?
+O **Fabrica de Software Starter Pack** é um framework agnóstico de LLM desenvolvido para automatizar a tradução de atas de reuniões, PRDs e requisitos de software em uma esteira ágil sincronizada (Trello + GitHub Projects/Issues). Ele integra nativamente a skill **`criacao-cards`** para garantir rigor estético e estrutural nos cartões do Trello.
 
-## Repositório Corporativo / Referência
-- **Fábrica de Software Corporativa:** [https://github.com/Djalma0multfacil/fabrica-de-software](https://github.com/Djalma0multfacil/fabrica-de-software)
+## Como implementar em outras LLMs (Copilot, Gemini, Claude Code)
 
-## Skills Disponíveis (Agnósticas de LLM)
-As skills abaixo organizam e automatizam fluxos de trabalho no Gemini CLI, Copilot e Claude Code:
+### 1. GitHub Copilot (`.github/copilot-instructions.md`)
+Copie o conteúdo conceitual e as regras da skill (incluindo as diretrizes de `criacao-cards`) para dentro do arquivo de instruções do Copilot no seu repositório. O Copilot passará a seguir o padrão de criação de issues granulares e cartões padronizados.
 
-1. **`fabrica-de-software`** (.gemini/skills/fabrica-de-software/):
-   - Transforma atas de reuniões e PRDs em épicos no Trello e sub-issues granulares no GitHub Projects.
-2. **`criacao-cards`** (.gemini/skills/criacao-cards/):
-   - Padroniza rigorosamente a criação de cards no Trello (modelo visual de Franco da Rocha, títulos em LETRAS MAIÚSCULAS, etiquetas e cores por município).
-3. **`gh-mult`** (.gemini/skills/gh-mult/):
-   - Configura e autentica no GitHub CLI utilizando a conta corporativa (`djalma.neto@multfacilcomercial.com.br`).
-4. **`endereco`** (.gemini/skills/endereco/):
-   - Localiza endereços em notas e os vincula com URLs do Google Maps.
+### 2. Claude Code (`CLAUDE.md` ou prompt do sistema)
+Adicione as diretrizes de governança do Trello x GitHub e padronização de cartões no arquivo `CLAUDE.md` do projeto. O Claude usará essa instrução para governar comandos via terminal e geração de artefatos ágeis.
 
-## Estrutura do Vault
-- `Daily/`: Diários e planejamentos de tarefas.
-- `Reuniões/`: Atas, referências de cards e alinhamentos.
-- `StudyingCode/`: Arquitetura de software, Clean Code, Docker, Front-end (Angular), IA.
-- `StudyingEnglish/`: Vocabulário e mensagens para IAs.
-- `terapia/`: Registros terapêuticos e mapas mentais.
+### 3. Gemini CLI (`.gemini/skills/fabrica-de-software/SKILL.md` e `.gemini/skills/criacao-cards/SKILL.md`)
+Estas skills já estão nativamente instaladas neste repositório. Quando acionada, a Fábrica de Software dialoga diretamente com a skill de criação de cards para garantir consistência em todos os municípios.
