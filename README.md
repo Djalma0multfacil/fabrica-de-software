@@ -1,15 +1,25 @@
-# Fábrica de Software Starter Pack (Multi-LLM Guide)
+# Obsidian Notes & Mult Projects Vault
 
-## O que é?
-O **Fabrica de Software Starter Pack** é um framework agnóstico de LLM desenvolvido para automatizar a tradução de atas de reuniões, PRDs e requisitos de software em uma esteira ágil sincronizada (Trello + GitHub Projects/Issues).
+Este repositório armazena notas pessoais de estudo, arquitetura de software, diários e automações/skills utilizadas na esteira ágil dos projetos da Mult.
 
-## Como implementar em outras LLMs (Copilot, Gemini, Claude Code)
+## Repositório Corporativo / Referência
+- **Fábrica de Software Corporativa:** [https://github.com/Djalma0multfacil/fabrica-de-software](https://github.com/Djalma0multfacil/fabrica-de-software)
 
-### 1. GitHub Copilot (`.github/copilot-instructions.md`)
-Copie o conteúdo conceitual e as regras da skill para dentro do arquivo de instruções do Copilot no seu repositório. O Copilot passará a seguir o padrão de criação de issues granulares e organização de épicos.
+## Skills Disponíveis (Agnósticas de LLM)
+As skills abaixo organizam e automatizam fluxos de trabalho no Gemini CLI, Copilot e Claude Code:
 
-### 2. Claude Code (`CLAUDE.md` ou prompt do sistema)
-Adicione as diretrizes de governança do Trello x GitHub no arquivo `CLAUDE.md` do projeto. O Claude usará essa instrução para governar comandos via terminal e geração de documentação de arquitetura.
+1. **`fabrica-de-software`** (.gemini/skills/fabrica-de-software/):
+   - Transforma atas de reuniões e PRDs em épicos no Trello e sub-issues granulares no GitHub Projects.
+2. **`criacao-cards`** (.gemini/skills/criacao-cards/):
+   - Padroniza rigorosamente a criação de cards no Trello (modelo visual de Franco da Rocha, títulos em LETRAS MAIÚSCULAS, etiquetas e cores por município).
+3. **`gh-mult`** (.gemini/skills/gh-mult/):
+   - Configura e autentica no GitHub CLI utilizando a conta corporativa (`djalma.neto@multfacilcomercial.com.br`).
+4. **`endereco`** (.gemini/skills/endereco/):
+   - Localiza endereços em notas e os vincula com URLs do Google Maps.
 
-### 3. Gemini CLI (`.gemini/skills/fabrica-de-software/SKILL.md`)
-Esta skill já está nativamente instalada neste repositório. Quando acionada, ela carrega automaticamente as diretrizes de engenharia, classificação técnica e sincronização ágil.
+## Estrutura do Vault
+- `Daily/`: Diários e planejamentos de tarefas.
+- `Reuniões/`: Atas, referências de cards e alinhamentos.
+- `StudyingCode/`: Arquitetura de software, Clean Code, Docker, Front-end (Angular), IA.
+- `StudyingEnglish/`: Vocabulário e mensagens para IAs.
+- `terapia/`: Registros terapêuticos e mapas mentais.
